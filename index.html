@@ -92,7 +92,7 @@
 
         <section class="conteudo">
             
-            <div class="degrade choro">
+            <div class="degrade">
                 <div class="d-flex escuro">
                     <img src="assets/img/album1.png" class="album">
                     <div class="conjunto-album">
@@ -126,11 +126,40 @@
                 <i class="icone-play-novamente">undo</i>
             </div>
             <div class="d-flex tempo">
-                <p>1:47</p> 
+                <p id="timer">0:00</p> 
                 <div class="total">
                     <div class="percorrido"></div>
                 </div>
-                <p>3:10</p>
+                <p>3:39</p>
+
+                <script>
+                    // Função para iniciar o timer que aumenta de 0:00 até 03:29
+                    function startCountdown(durationInSeconds) {
+                        const timerDisplay = document.getElementById('timer');
+                        let timeElapsed = 0;
+            
+                        const interval = setInterval(() => {
+                            // Calcula minutos e segundos passados
+                            const minutes = Math.floor(timeElapsed / 60);
+                            const seconds = timeElapsed % 60;
+            
+                            // Atualiza o conteúdo do timer no HTML
+                            timerDisplay.textContent = 
+                                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+                            // Quando o timer chega a 3:29, reinicia
+                            if (timeElapsed >= durationInSeconds) {
+                                timeElapsed = 0; // Reinicia o tempo
+                            } else {
+                                timeElapsed++; // Incrementa o tempo
+                            }
+                        }, 1000); // Atualiza a cada segundo
+                    }
+            
+                    // Inicia o timer com 3 minutos e 29 segundos (209 segundos)
+                    startCountdown(209);
+                </script>
+
             </div>
         </div>
     </section>

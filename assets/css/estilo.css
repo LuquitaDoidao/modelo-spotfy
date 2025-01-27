@@ -315,6 +315,11 @@ header{
 
 .conteudo-principal{
     display: block;
+    max-height: 580px;
+    max-width: 1160px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #232323c1, #121212);
 }
 
 .conteudo{
@@ -543,15 +548,33 @@ header{
 
 .total{
     width: 550px;
-    height: 3px;
+    height: 5px;
     background-color: #B3B3A6;
     margin-top: 10px;
     border-radius: 15px;
 }
 
+.total:hover .percorrido{
+    background-color: #1DD75F;
+}
+
 .percorrido{
     width: 250px;
-    height: 3px;
+    height: 5px;
     background-color: #ffffff;
     border-radius: 15px;
+
+    animation-name: prolonga;
+    animation-duration: 319s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes prolonga {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 550px;
+    }
 }
