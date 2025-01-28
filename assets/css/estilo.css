@@ -377,6 +377,10 @@ header{
     background-image: url(../img/fundo-album3.png);
 }
 
+.odisseia{
+    background-image: url(../img/fundo-album4.png);
+}
+
 .escuro{
     background: linear-gradient(200deg, #232323a8, #23232312, #23232312, #2323236f, #232323);
     padding: 18px;
@@ -474,9 +478,42 @@ header{
     margin-left: 33px;
 }
 
+.mostra-musica{
+    margin-left: 50px;
+    height: 70px;
+}
+
+.mostra-musica:hover{
+    background-color: #2A2A2A;
+}
+
+.mostra-musica img{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.mostra-musica .num{
+    color: #B3B3A6;
+}
+
+.mostra-musica .musica{
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.mostra-musica .autor{
+    color: #B3B3A6;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
 .texto p{
     color:#ffffff;
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px 0px;
 }
 
@@ -485,7 +522,7 @@ header{
     padding: 15px;
     width: 1150px;
     height: 640px;
-}
+} 
 
 
 /* --------------------- PLAY --------------------- */
