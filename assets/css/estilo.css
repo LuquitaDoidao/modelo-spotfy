@@ -479,7 +479,6 @@ header{
 }
 
 .mostra-musica{
-    margin-left: 50px;
     height: 70px;
 }
 
@@ -496,32 +495,54 @@ header{
 
 .mostra-musica .num{
     color: #B3B3A6;
+    font-weight: normal;
+    border-radius: 15px;
+    margin-left: 20px;
 }
 
 .mostra-musica .musica{
     color: #ffffff;
-    font-size: 18px;
+    font-weight: normal;
+    font-size: 16px;
     margin-left: 10px;
 }
 
 .mostra-musica .autor{
     color: #B3B3A6;
-    font-size: 16px;
+    font-weight: normal;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.texto .titulo{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+
+.texto .titulo span{
+    color:#B3B3A6;
+    font-size: 19px;
+    font-weight: normal;
     margin-left: 10px;
 }
 
 
-.texto p{
+.texto-comprido{
     color:#ffffff;
-    font-size: 18px;
-    margin: 5px 0px;
+    font-size: 16px;
+    margin: 10px 50px 25px 50px;
+    font-weight: 350;
+    line-height: 25px;
+    letter-spacing: 1.5px;
 }
 
 .texto{
     background-color: #121212;
     padding: 15px;
     width: 1150px;
-    height: 640px;
 } 
 
 
