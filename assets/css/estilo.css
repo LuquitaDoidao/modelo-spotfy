@@ -486,6 +486,10 @@ header{
     background-color: #2A2A2A;
 }
 
+.mostra-musica:hover .autor{
+    color:#ffffff;
+}
+
 .mostra-musica img{
     height: 60px;
     width: 60px;
@@ -507,11 +511,19 @@ header{
     margin-left: 10px;
 }
 
+.mostra-musica .musica:hover{
+    text-decoration:underline;
+}
+
 .mostra-musica .autor{
     color: #B3B3A6;
     font-weight: normal;
     font-size: 14px;
     margin-left: 10px;
+}
+
+.mostra-musica .autor:hover{
+    text-decoration:underline;
 }
 
 .texto .titulo{
