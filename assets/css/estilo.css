@@ -113,6 +113,7 @@ header{
     position: absolute;
 
     transition: 0.6s;
+    cursor: pointer;
 }
 
 .pesquisa:hover{
@@ -130,7 +131,8 @@ header{
     display: flex;
     position: absolute;
     z-index: 2;
-    right: 932px;
+    right: 65%;
+    cursor: pointer;
 }
 
 .pesquisa:hover .lupa{
@@ -155,6 +157,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .premium:hover{
@@ -170,6 +173,7 @@ header{
     font-size: 14px;
     position: absolute;
     margin-left: 26px;
+    cursor: pointer;
 }
 
 .instalar:hover{
@@ -198,6 +202,7 @@ header{
     font-size: 20px;
     color:#B3B3A6;
     position: absolute;
+    cursor: pointer;
 }
 
 .sino:hover{
@@ -217,6 +222,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .conta:hover{
@@ -285,6 +291,7 @@ header{
     height: 70px;
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .playlist:hover{
@@ -441,6 +448,7 @@ header{
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .play-icone:hover{
@@ -456,6 +464,7 @@ header{
     color: #B3B3A6;
     font-size: 35px;
     margin-left: 35px;
+    cursor: pointer;
 }
 
 .add-icone:hover{
@@ -470,6 +479,7 @@ header{
     color: #B3B3A6;
     font-size: 35px;
     margin-left: 35px;
+    cursor: pointer;
 }
 
 .mais-icone:hover{
@@ -480,6 +490,7 @@ header{
 
 .mostra-musica{
     height: 70px;
+    background-color: #121212;
 }
 
 .mostra-musica:hover{
@@ -557,6 +568,120 @@ header{
     width: 1150px;
 } 
 
+footer{
+    background-color: #121212;
+}
+
+.contatenos .titulo{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px  0px 40px 0px;
+}
+
+.contatos p{
+    color: #B3B3A6;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.contatos i{
+    font-family: 'Material Icons';
+    font-style: normal;
+    color: #B3B3A6;
+    font-size: 35px;
+    margin-left: 35px;
+}
+
+.formulario{
+    width: 400px;
+    height: 210px;
+    border: 2px solid #B3B3A6;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.formulario:hover{
+    border: 2px solid #ffffff;
+}
+
+.formulario input{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #B3B3A6;
+    color: #B3B3A6;
+    width: 300px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.formulario label{
+    color: #B3B3A6;
+    margin-bottom: 6px;
+}
+
+.formulario label:hover{
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.formulario label:hover input{
+    color: #ffffff;
+}
+
+.formulario button{
+    background-color: #1DD75F;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 50px;
+    border: none;
+    height: 30px;
+    width: 130px;
+    transition: 0.3s;
+    margin-top: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    cursor: pointer;
+}
+
+.formulario button:hover{
+    background-color: #3ADF74;
+}
+
+
+.tampa{
+    display: none;
+    background-color: #B3B3A6;
+    border-radius: 15px;
+    width: 377px;
+    height: 187px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.tampa:hover{
+    background-color: #ffffff;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.tampa i{
+    font-family: 'Material Icons';
+    font-style: normal;
+    color: #000000;
+    font-size: 105px;
+    
+}
+
 
 /* --------------------- PLAY --------------------- */
 
@@ -565,6 +690,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 }
 
 .play i:hover{
@@ -577,6 +703,7 @@ header{
     font-size: 28px;
     color: #B3B3A6;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .icone-play-anterior{
@@ -585,6 +712,7 @@ header{
     font-size: 35px;
     color: #B3B3A6;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 .icone-play-play{
@@ -592,6 +720,7 @@ header{
     font-style: normal;
     font-size: 40px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .icone-play-proximo{
@@ -600,6 +729,7 @@ header{
     font-size: 35px;
     color: #B3B3A6;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .icone-play-novamente{
@@ -608,6 +738,7 @@ header{
     font-size: 28px;
     color: #B3B3A6;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .tempo p{
@@ -622,10 +753,12 @@ header{
     background-color: #B3B3A6;
     margin-top: 10px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .total:hover .percorrido{
     background-color: #1DD75F;
+    background: linear-gradient(80deg, #13bd4e, #1DD75F)
 }
 
 .percorrido{
@@ -647,4 +780,11 @@ header{
     100%{
         width: 550px;
     }
+}
+.none{
+    background-color: transparent;
+    border: none;
+}
+.pointer:hover{
+    cursor: pointer;
 }
