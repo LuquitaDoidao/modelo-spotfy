@@ -22,12 +22,12 @@
 
         <div class="d-flex estreita divisao-head-um">
 
-            <div class="home" id="conteudo-principal" onclick="voltar()">
-                <i class="home-icone">home</i> <!-- Ícone de casa -->
+            <div class="home">
+                <i class="home-icone">home</i>
             </div>
 
             <div class="estreita">
-                <i class="lupa">search</i> <!-- Ícone de lupa -->
+                <i class="lupa">search</i>
                 <input type="text" class="pesquisa" placeholder="O que você quer ouvir?">
             </div>
         </div>
@@ -95,7 +95,52 @@
         </section>
     
         <section class="conteudo-principal" id="conteudo-principal">
+            <div class="texto">
+                <p class="titulo">Bem Vindo(a)!<span> Bom dia, boa tarde, boa noite.</span></p>
 
+                <p class="texto-comprido">
+                    Bem-vindo ao portfólio! Aqui estão reunidos alguns projetos desenvolvidos para explorar tecnologia, design e lógica
+                     de programação. O foco está na criação de interfaces intuitivas e funcionais, sempre buscando unir estética e usabilidade.
+                      Cada projeto apresentado representa um aprendizado, seja no aprimoramento do design responsivo, na interatividade com 
+                      JavaScript ou na aplicação de conceitos de lógica e estruturação de código. Este espaço serve como um registro da 
+                      evolução e do constante desenvolvimento de habilidades. Fique à vontade para explorar e conhecer mais sobre esses 
+                      trabalhos!
+                </p>
+            </div>
+
+            <div class="lista-album d-flex-eve">
+                <div class="album">
+                    <img src="assets/img/artista.png" class="esp">
+                    <div class="grupo">
+                        <p class="g">Lucas A. Lima</p>
+                        <p class="p">Garoto de Programa</p>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <img src="assets/img/album1.png">
+                    <div>
+                        <p class="g">Sobre mim</p>
+                        <p class="p">Playlist</p>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <img src="assets/img/album2.png">
+                    <div>
+                        <p class="g">Esperiencias</p>
+                        <p class="p">Playlist</p>
+                    </div>
+                </div>
+
+                <div class="album">
+                    <img src="assets/img/album3.png">
+                    <div>
+                        <p class="g">Projetos</p>
+                        <p class="p">Playlist</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- PLAYLIST CHORANDO MAS COM ESTILO -->
@@ -638,7 +683,8 @@
     </div>
 
     
-    <section class="play">
+    <section class="play d-flex-eve estreita">
+
         <div class="conjunto-play-um">
             <div class="estreita">
                 <i class="icone-play-embaralha pointer">shuffle</i>
@@ -750,9 +796,6 @@
     </script>
     
 
-            </div>
-        </div>
-    </section>
 
     <script src="assets/js/codigos.js"></script>
 </body>

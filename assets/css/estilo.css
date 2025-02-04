@@ -131,7 +131,7 @@ header{
     display: flex;
     position: absolute;
     z-index: 2;
-    right: 65%;
+    right: 60.5%;
     cursor: pointer;
 }
 
@@ -322,12 +322,49 @@ header{
 
 .conteudo-principal{
     display: block;
+    overflow-y: auto;
     max-height: 580px;
     max-width: 1160px;
     margin-left: 10px;
     border-radius: 15px;
-    background: linear-gradient(180deg, #232323c1, #121212);
+    background-color: #121212;
 }
+
+.lista-album .album{
+    background: linear-gradient(180deg, #171717, #1F1F1F);
+    width: 220px;
+    height: 280px;
+    padding: 19px;
+}
+
+.lista-album .album img{
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.lista-album .album .esp{
+    height: 180px;
+    width: 180px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+.lista-album .album .p{
+    color: #B3B3A6;
+}
+
+.lista-album .album .g{
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.lista-album .album:hover{
+    background: linear-gradient(180deg, #2f2f2f, #2A2A2A);
+}
+
 
 .conteudo{
     display: none;
@@ -685,6 +722,12 @@ footer{
 
 /* --------------------- PLAY --------------------- */
 
+.conjunto-play-dois img{
+    height: 60px;
+    width: 60px;
+}
+
+
 .conjunto-play-um{
     display: flex;
     flex-direction: column;
@@ -757,8 +800,7 @@ footer{
 }
 
 .total:hover .percorrido{
-    background-color: #1DD75F;
-    background: linear-gradient(80deg, #13bd4e, #1DD75F)
+    background: linear-gradient(80deg, #13883c, #1DD75F)
 }
 
 .percorrido{
@@ -780,11 +822,4 @@ footer{
     100%{
         width: 550px;
     }
-}
-.none{
-    background-color: transparent;
-    border: none;
-}
-.pointer:hover{
-    cursor: pointer;
 }
